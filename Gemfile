@@ -37,10 +37,12 @@ gem 'bootstrap-will_paginate', '1.0.0'
 gem 'rails-controller-testing'
 
 # Adding Webpacker for Javascript Library management 
+# Webpacker is a gem that wraps the webpack front-end builder library for us, 
 
 gem 'webpacker', '~> 3.5'
 
 #React gem for Rails
+
  gem 'react-rails'
 
 # Use Capistrano for deployment
