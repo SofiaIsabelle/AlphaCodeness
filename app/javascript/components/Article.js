@@ -42,6 +42,8 @@ class Article extends React.Component {
   }
 }
 
+
+/* Proptypes are the declarations of which properties you will be using */
 Article.propTypes = {
   title: PropTypes.string,
   path: PropTypes.string,
