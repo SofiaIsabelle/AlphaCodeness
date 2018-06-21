@@ -8,15 +8,24 @@ class Colorpicker extends React.Component {
 
 	constructor(props){
 		super(props);
+
+		this.handleChange = this.handleChange.bind(this);
 	}
 
-	handleChange = {}
+	handleChange = (color) => {
+		console.log(color.hex);
+	}
 
 	render(){
 		return (<React.Fragment>
-				<SketchPicker/>
-               </React.Fragment>)
+				<SketchPicker color= {this.props.color}
+				              onChange={this.handleChange}/> //gets the color of the sketch picker as an input 
+               </React.Fragment>
+
+       );
+
 	}
+
 }
 
 /* export default makes it so that some other javascript that we're using to actually load all of the stuff onto the browser
