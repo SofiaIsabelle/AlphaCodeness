@@ -8,3 +8,5 @@
 ##### https://github.com/rails/webpacker
 ### React Components
 ##### https://reactjs.org/docs/components-and-props.html
+### React Color
+##### http://casesandberg.github.io/react-color/
