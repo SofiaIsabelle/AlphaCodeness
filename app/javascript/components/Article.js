@@ -28,6 +28,11 @@ class Article extends React.Component {
       </React.Fragment>
     );
   }
+  
+  componentDidMount(){
+    var self = this;
+    setInterval(function() { self.forceUpdate() }, 1000); //1000 milliseconds means 1 second
+  }
 }
 
 Article.propTypes = {
