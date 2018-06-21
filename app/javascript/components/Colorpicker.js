@@ -13,14 +13,14 @@ class Colorpicker extends React.Component {
 	}
 
 	handleChange = (color) => {
-		console.log(color.hex);
+		document.body.style.background = color.hex;
 	}
 
 	render(){
 		return (<React.Fragment>
-				<SketchPicker color= {this.props.color}
-				              onChange={this.handleChange}/> //gets the color of the sketch picker as an input 
-               </React.Fragment>
+				<SketchPicker color= {this.props.color} // to specify which color the sketch picker should start off with 
+				              onChange={this.handleChange}/> 
+				</React.Fragment>
 
        );
 
