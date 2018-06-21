@@ -11,4 +11,5 @@
 ### React Color
 ##### http://casesandberg.github.io/react-color/
 ### To add REACT color using yarn , type this into project directory in your terminal: (Yarn is your       dependency manager for the frontend of your Rails App)
-##### yarn add react-color 
+##### yarn add react-color ( general migrations command bundle exec rails db:migrate)
+##### bundle exec rails g migration AddColorToUsers
