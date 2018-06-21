@@ -8,12 +8,16 @@ class Colorpicker extends React.Component {
 
 	constructor(props){
 		super(props);
+		this.state = {selector: props.selector};
 
 		this.handleChange = this.handleChange.bind(this);
 	}
 
 	handleChange = (color) => {
 		document.body.style.background = color.hex;
+		let element = document.querySelector('#'+this.state.selector);
+
+		element.value = color.hex;
 	}
 
 	render(){
@@ -28,10 +32,9 @@ class Colorpicker extends React.Component {
 
 }
 
-/* export default makes it so that some other javascript that we're using to actually load all of the stuff onto the browser
-   can find the colorpicker class when we reference it */
+
 
 export default Colorpicker;
 
-/* Proptypes are the declarations of which properties you will be using */
+
 Colorpicker.propTypers = {};
